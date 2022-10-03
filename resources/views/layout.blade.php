@@ -7,7 +7,7 @@
     <title>@yield('title')</title>
 
 <link rel="canonical" href="laravel8-crud">
-<link href="//getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link href="//getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <!-- Custom styles for this template -->
 <link href="//getbootstrap.com/docs/5.2/examples/checkout/form-validation.css" rel="stylesheet">
 <meta name="theme-color" content="#712cf9">

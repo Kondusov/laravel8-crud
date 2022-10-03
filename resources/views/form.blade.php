@@ -16,15 +16,21 @@
     <div class="row mb-3">
       <label for="inputName" class="col-sm-1 col-form-label">Name</label>
       <div class="col-sm-11">
-        <input value="{{isset($user) ? $user->name : null}}"
+        <input value="{{old('name', isset($user) ? $user->name : null)}}"
         name="name" type="text" class="form-control" placeholder="Name" aria-label="Name">
+        @error('name')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
       </div>
     </div>
     <div class="row mb-3">
       <label for="inputEmail" class="col-sm-1 col-form-label">Email</label>
       <div class="col-sm-11">
-        <input value="{{isset($user) ? $user->email : null}}"
+        <input value="{{old('email', isset($user) ? $user->email : null)}}"
         name="email" type="email" class="form-control" placeholder="Email" aria-label="Email">
+        @error('email')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
       </div>
     </div>
     <div class="row mb-3">
